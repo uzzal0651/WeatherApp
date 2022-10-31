@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Apps</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-pan">
+        <h1>Welcome to Weather Application</h1>
+        <form id="form">
+          <div class="row">
+            <input
+              type="text"
+              class="form-input-txt"
+              id="country"
+              placeholder="Country Name"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="text"
+              class="form-input-txt"
+              id="city"
+              placeholder="CIty Name"
+            />
+          </div>
+          <div class="row">
+            <button type="submit" class="form-btn">Get Weather</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="weather-result-pan">
+        <div class="w-pan-header" id="w-city">City Name</div>
+        <img id="w-icon" />
+        <div class="w-pan-headerTwo" id="w-feel">Mood</div>
+        <div class="per-common-row">
+          <h3>Temperature: <span id="w-temp">00.00°C</span></h3>
+        </div>
+        <div class="per-common-row border-top-none">
+          <h3>Pressure: <span id="w-pressure">0000Kpa</span></h3>
+        </div>
+        <div class="per-common-row border-top-none">
+          <h3>Humidity: <span id="w-humidity">00</span></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
